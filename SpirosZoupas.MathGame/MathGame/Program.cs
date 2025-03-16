@@ -34,7 +34,7 @@ while (true)
     }
     else
     {
-        Operation(validatedInput.ToString());
+        Operation(validatedInput);
     }
 }
 
@@ -102,7 +102,7 @@ string IsValidInput(string[] options, string input, string message = "Incorrect 
     return input;
 }
 
-void Operation(string operation)
+void ExecuteOperation(string operation)
 {
 
     if (operation == "r" || operation == "R")
