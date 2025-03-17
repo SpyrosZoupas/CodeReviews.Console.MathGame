@@ -34,7 +34,7 @@ while (true)
     }
     else
     {
-        Operation(validatedInput);
+        ExecuteOperation(validatedInput);
     }
 }
 
@@ -164,9 +164,9 @@ void ExecuteOperation(string operation)
             pastGames.Add(separator);
 
             if (isInRandomGame)
-                Operation("r");
+                ExecuteOperation("r");
             else
-                Operation(operation);
+                ExecuteOperation(operation);
             break;
         }
         else
@@ -194,9 +194,9 @@ void ExecuteOperation(string operation)
         if (validatedInput == "1")
         {
             if (isInRandomGame)
-                Operation("r");
+                ExecuteOperation("r");
             else
-                Operation(operation);
+                ExecuteOperation(operation);
         }
     }
 }
